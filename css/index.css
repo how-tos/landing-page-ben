@@ -132,21 +132,32 @@ table {
 html {
   font-size: 62.5%;
 }
-header {
-  border: 1px solid red;
-}
 .banner {
-  border: 1px solid red;
+  text-align: center;
 }
-.main {
-  border: 1px solid red;
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 220px;
+}
+header nav a {
+  display: flex;
+  justify-content: space-around;
+}
+header #search {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20px;
 }
 .main .posts {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .main .posts article {
   border: 1px solid red;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
 }
