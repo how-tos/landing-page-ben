@@ -1,19 +1,29 @@
 //Container
+
 .container{
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @phone{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 //Header and Nav
+
 header{
   border-bottom: 3px solid @orange;
   .logo{
     font-size: 5rem;
-    color: blue;
+    color: @blue;
     text-decoration: none;
     display: flex;
     margin-bottom: -4.3rem;
+    @media @phone{
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
   }
 
   .logo:hover{
@@ -24,16 +34,27 @@ header{
     display: flex;
     justify-content: flex-end;
     margin-right: 22rem;
-
+    @media @phone{
+      flex-direction: column;
+      margin-right: 0rem;
+    }
+    a{
+      @media @phone{
+        padding: 2rem;
+      }
+    }
   }
 
   a{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    color: blue;
+    color: @blue;
     font-size: 2rem;
     padding: 1rem;
+    @media @phone{
+      border: 1px solid @orange;
+    }
   }
 
   a:hover{
@@ -45,16 +66,27 @@ header{
     justify-content: flex-end;
     margin-top: -2rem;
     margin-bottom: .1rem;
+    @media @phone{
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    }
   }
 }
 
 //Login
+
 #login{
 margin-left: 2rem;
+@media @phone{
+  flex-direction: column;
+  margin-left: 12rem;
+  }
 }
 
 
 //Banner
+
 .banner{
   border-bottom: 3px solid @orange;
   padding: 1rem;
@@ -64,23 +96,33 @@ margin-left: 2rem;
     margin-bottom: -10rem;
     height: 10rem;
     width: 30%;
+    @media @phone{
+      margin-left: 14rem;
+      margin-bottom: 10rem;
+    }
   }
 
   .banner-text{
     width: 50%;
     margin-bottom: 1rem;
+    @media @phone {
+      width: 100%;
+    }
     h1 {
       font-size: 3rem;
     }
 
     p{
       font-size: 2rem;
+      @media @phone{
+        width: 100%;
+      }
     }
 
     .banner-btn{
       font-size: 2rem;
       text-decoration: none;
-      color: blue;
+      color: @blue;
     }
     .banner-btn:hover{
       color: @orange;
@@ -89,6 +131,7 @@ margin-left: 2rem;
 }
 
 //Main page
+
 .main{
   
   header{
@@ -100,6 +143,7 @@ margin-left: 2rem;
       justify-content: space-evenly;
       flex-direction: column;
       flex-wrap: wrap;
+      
     article {
       margin-top: 5px;
       border-bottom: 3px solid @orange;
@@ -107,16 +151,21 @@ margin-left: 2rem;
       h3{
         font-size: 5rem;
       }
+
       p{
         font-size: 2rem;
         width: 60%;
+        @media @phone{
+          width: 100%;
+        }
       }
             .button{
-              color:blue;
+              color:@blue;
               text-decoration: none;   
               display: flex;
               font-size: 2rem;
       }
+
       .button:hover{
         color: @orange
       }
@@ -125,6 +174,12 @@ margin-left: 2rem;
           margin-left: 50rem;
           width: 30%;
           margin-bottom: -10rem;
+          @media @phone{
+            margin-left: 14rem;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10rem;
+          }
         }
       }
     }

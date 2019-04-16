@@ -137,34 +137,62 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 header {
-  border-bottom: 3px solid #ffaf42;
+  border-bottom: 3px solid #ffae66;
 }
 header .logo {
   font-size: 5rem;
-  color: blue;
+  color: #666CFF;
   text-decoration: none;
   display: flex;
   margin-bottom: -4.3rem;
 }
+@media (max-width: 500px) {
+  header .logo {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
 header .logo:hover {
-  color: #ffaf42;
+  color: #ffae66;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
   margin-right: 22rem;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    margin-right: 0rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 2rem;
+  }
+}
 header a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  color: blue;
+  color: #666CFF;
   font-size: 2rem;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  header a {
+    border: 1px solid #ffae66;
+  }
+}
 header a:hover {
-  color: #ffaf42;
+  color: #ffae66;
 }
 header #search {
   display: flex;
@@ -172,11 +200,24 @@ header #search {
   margin-top: -2rem;
   margin-bottom: 0.1rem;
 }
+@media (max-width: 500px) {
+  header #search {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 10rem;
+  }
+}
 #login {
   margin-left: 2rem;
 }
+@media (max-width: 500px) {
+  #login {
+    flex-direction: column;
+    margin-left: 12rem;
+  }
+}
 .banner {
-  border-bottom: 3px solid #ffaf42;
+  border-bottom: 3px solid #ffae66;
   padding: 1rem;
 }
 .banner .banner-img {
@@ -185,9 +226,20 @@ header #search {
   height: 10rem;
   width: 30%;
 }
+@media (max-width: 500px) {
+  .banner .banner-img {
+    margin-left: 14rem;
+    margin-bottom: 10rem;
+  }
+}
 .banner .banner-text {
   width: 50%;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .banner .banner-text {
+    width: 100%;
+  }
 }
 .banner .banner-text h1 {
   font-size: 3rem;
@@ -195,13 +247,18 @@ header #search {
 .banner .banner-text p {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .banner .banner-text p {
+    width: 100%;
+  }
+}
 .banner .banner-text .banner-btn {
   font-size: 2rem;
   text-decoration: none;
-  color: blue;
+  color: #666CFF;
 }
 .banner .banner-text .banner-btn:hover {
-  color: #ffaf42;
+  color: #ffae66;
 }
 .main header {
   font-size: 5rem;
@@ -214,7 +271,7 @@ header #search {
 }
 .main .posts article {
   margin-top: 5px;
-  border-bottom: 3px solid #ffaf42;
+  border-bottom: 3px solid #ffae66;
   padding: 1rem;
 }
 .main .posts article h3 {
@@ -224,20 +281,33 @@ header #search {
   font-size: 2rem;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .main .posts article p {
+    width: 100%;
+  }
+}
 .main .posts article .button {
-  color: blue;
+  color: #666CFF;
   text-decoration: none;
   display: flex;
   font-size: 2rem;
 }
 .main .posts article .button:hover {
-  color: #ffaf42;
+  color: #ffae66;
 }
 .main .posts article img {
   height: 10rem;
   margin-left: 50rem;
   width: 30%;
   margin-bottom: -10rem;
+}
+@media (max-width: 500px) {
+  .main .posts article img {
+    margin-left: 14rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
 }
 footer {
   text-align: center;
