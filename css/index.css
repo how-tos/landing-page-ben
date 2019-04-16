@@ -132,31 +132,59 @@ table {
 html {
   font-size: 62.5%;
 }
-.banner {
-  text-align: center;
+.banner .banner-text {
+  width: 50%;
+}
+header .logo {
+  font-size: 30px;
+  color: blue;
+  text-decoration: none;
+  display: flex;
+}
+header .logo:hover {
+  color: orange;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
   margin-right: 220px;
 }
-header nav a {
+header a {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-decoration: none;
+  color: blue;
+}
+header a:hover {
+  color: orange;
 }
 header #search {
   display: flex;
   justify-content: flex-end;
   margin-top: -20px;
 }
+.main header {
+  font-size: 20px;
+}
 .main .posts {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .main .posts article {
-  border: 1px solid red;
   margin-top: 10px;
+}
+.main .posts article h3 {
+  font-size: 40px;
+}
+.main .posts article .button {
+  color: blue;
+  text-decoration: none;
+  display: flex;
+  margin-left: -40px;
+  font-size: 20px;
+}
+.main .posts article .button:hover {
+  color: orange;
 }
 footer {
   text-align: center;

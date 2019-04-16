@@ -1,36 +1,74 @@
+//Banner
 .banner{
-    text-align: center;
+  .banner-img{
+
   }
-  
-  header {
-    nav {
+  .banner-text{
+    width: 50%;
+    
+  }
+}
+
+//Header and Nav
+header{
+  .logo{
+    font-size: 30px;
+    color: blue;
+    text-decoration: none;
+    display: flex;
+  }
+  .logo:hover{
+    color: orange;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+  }
+  a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover{
+    color: orange
+  }
+  #search{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+  }
+}
+
+//Main page
+.main{
+  header{
+    font-size: 20px;
+  }
+  .posts{
       display: flex;
-      justify-content: flex-end;
-      margin-right: 220px;
-      a {
-        display: flex;
-        justify-content: space-around;
+      justify-content: space-evenly;
+    article {
+      margin-top: 10px;
+      h3{
+        font-size: 40px
+      }
+            .button{
+              color:blue;
+              text-decoration: none;   
+              display: flex;
+              margin-left: -40px;
+              font-size: 20px;
+      }
+      .button:hover{
+        color: orange;
       }
     }
-    #search{
-      display: flex;
-      justify-content: flex-end;
-      margin-top: -20px;
-    }
   }
-  
-  .main{
-    .posts{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      article{
-        border: 1px solid red;
-        margin-top: 10px;
-      }
-    }
-  }
-  
-  footer{
-    text-align: center;
-  }
+}
+
+//Footer
+footer{
+  text-align: center;
+}
