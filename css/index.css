@@ -172,16 +172,18 @@ header #search {
   margin-top: -2rem;
   margin-bottom: 0.1rem;
 }
+#login {
+  margin-left: 2rem;
+}
 .banner {
   border-bottom: 3px solid #ffaf42;
   padding: 1rem;
 }
 .banner .banner-img {
   margin-left: 50rem;
-  display: flex;
-  flex-wrap: wrap;
-  height: 10rem;
   margin-bottom: -10rem;
+  height: 10rem;
+  width: 30%;
 }
 .banner .banner-text {
   width: 50%;
@@ -194,7 +196,7 @@ header #search {
   font-size: 2rem;
 }
 .banner .banner-text .banner-btn {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: none;
   color: blue;
 }
