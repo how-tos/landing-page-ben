@@ -132,14 +132,18 @@ table {
 html {
   font-size: 62.5%;
 }
-.banner .banner-text {
-  width: 50%;
+.container {
+  max-width: 80%;
+}
+header {
+  border-bottom: 1px solid gray;
 }
 header .logo {
-  font-size: 30px;
+  font-size: 5rem;
   color: blue;
   text-decoration: none;
   display: flex;
+  margin-bottom: -2.4rem;
 }
 header .logo:hover {
   color: orange;
@@ -147,13 +151,14 @@ header .logo:hover {
 header nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 220px;
+  margin-right: 22rem;
 }
 header a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   color: blue;
+  font-size: 2rem;
 }
 header a:hover {
   color: orange;
@@ -161,31 +166,67 @@ header a:hover {
 header #search {
   display: flex;
   justify-content: flex-end;
-  margin-top: -20px;
+  margin-top: -2rem;
+  margin-bottom: 0.2rem;
+}
+.banner {
+  border-bottom: 1px dashed blue;
+}
+.banner .banner-img {
+  margin-left: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 10rem;
+}
+.banner .banner-text {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.banner .banner-text h1 {
+  font-size: 3rem;
+}
+.banner .banner-text p {
+  font-size: 2rem;
+}
+.banner .banner-text .banner-btn {
+  font-size: 1.6rem;
 }
 .main header {
-  font-size: 20px;
+  font-size: 5rem;
 }
 .main .posts {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .main .posts article {
-  margin-top: 10px;
+  margin-top: 5px;
+  border: 1px solid red;
 }
 .main .posts article h3 {
-  font-size: 40px;
+  font-size: 5rem;
+}
+.main .posts article p {
+  font-size: 2rem;
+  width: 60%;
 }
 .main .posts article .button {
   color: blue;
   text-decoration: none;
   display: flex;
-  margin-left: -40px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .main .posts article .button:hover {
   color: orange;
 }
+.main .posts article img {
+  height: 10rem;
+  margin-left: 100rem;
+  width: 30%;
+  margin-bottom: -10rem;
+}
 footer {
   text-align: center;
+  font-size: 1.7rem;
 }
