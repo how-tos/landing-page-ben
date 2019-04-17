@@ -165,7 +165,7 @@ header .logo:hover {
 header nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 22rem;
+  margin-right: 0rem;
 }
 @media (max-width: 500px) {
   header nav {
@@ -221,10 +221,9 @@ header #search {
   padding: 1rem;
 }
 .banner .banner-img {
-  margin-left: 50rem;
+  margin-left: 45rem;
   margin-bottom: -10rem;
-  height: 10rem;
-  width: 30%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   .banner .banner-img {
@@ -235,6 +234,7 @@ header #search {
 .banner .banner-text {
   width: 50%;
   margin-bottom: 1rem;
+  margin-top: -11rem;
 }
 @media (max-width: 500px) {
   .banner .banner-text {
@@ -246,6 +246,7 @@ header #search {
 }
 .banner .banner-text p {
   font-size: 2rem;
+  color: #8c8c8c;
 }
 @media (max-width: 500px) {
   .banner .banner-text p {
@@ -280,6 +281,7 @@ header #search {
 .main .posts article p {
   font-size: 2rem;
   width: 60%;
+  color: #8c8c8c;
 }
 @media (max-width: 500px) {
   .main .posts article p {
@@ -296,10 +298,9 @@ header #search {
   color: #ffae66;
 }
 .main .posts article img {
-  height: 10rem;
   margin-left: 50rem;
-  width: 30%;
-  margin-bottom: -10rem;
+  width: 35%;
+  margin-bottom: -22rem;
 }
 @media (max-width: 500px) {
   .main .posts article img {
@@ -312,4 +313,5 @@ header #search {
 footer {
   text-align: center;
   font-size: 1.7rem;
+  background-color: #8c8c8c;
 }
