@@ -331,3 +331,109 @@ footer {
   font-size: 1.7rem;
   background-color: whitesmoke;
 }
+.menu {
+  background-color: #666CFF;
+  overflow: hidden;
+}
+.menu a {
+  float: left;
+  display: block;
+  color: #ffae66;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.menu a:hover {
+  background-color: #666CFF;
+  color: #ffae66;
+}
+.active {
+  background-color: #ffae66;
+  color: white;
+}
+.menu .icon {
+  display: none;
+}
+.banner {
+  border-bottom: 3px solid #666CFF;
+  padding: 1rem;
+}
+.abanner-text {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .abanner-text {
+    width: 100%;
+  }
+}
+.abanner-text h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.abanner-text p {
+  font-size: 2rem;
+  color: #8c8c8c;
+}
+@media (max-width: 500px) {
+  .abanner-text p {
+    width: 100%;
+  }
+}
+.abanner-text .banner-btn {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffae66;
+}
+.abanner-text .banner-btn:hover {
+  color: #666CFF;
+}
+.main .posts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main .posts article {
+  margin-top: 5px;
+  border-bottom: 2px dashed #666CFF;
+  padding: 1rem;
+}
+.main .posts article h3 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.main .posts article p {
+  font-size: 2rem;
+  width: 60%;
+  color: #8c8c8c;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .main .posts article p {
+    width: 100%;
+  }
+}
+.main .posts article .button {
+  color: #ffae66;
+  text-decoration: none;
+  display: flex;
+  font-size: 2rem;
+}
+.main .posts article .button:hover {
+  color: #666CFF;
+}
+.main .posts article img {
+  margin-left: 65rem;
+  width: 35%;
+  margin-bottom: -22rem;
+}
+@media (max-width: 500px) {
+  .main .posts article img {
+    margin-left: 14rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+}
