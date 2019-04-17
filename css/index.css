@@ -171,7 +171,8 @@ header .logo {
   header .logo {
     flex-direction: column;
     margin-bottom: 2rem;
-    width: 100%;
+    width: 75%;
+    margin-left: 5rem;
   }
 }
 header .logo:hover {
@@ -243,8 +244,9 @@ header #search {
 }
 @media (max-width: 500px) {
   .banner .banner-img {
-    margin-left: 14rem;
-    margin-bottom: 10rem;
+    margin-left: 0rem;
+    margin-bottom: 15rem;
+    width: 100%;
   }
 }
 .banner .banner-text {
@@ -314,7 +316,7 @@ header #search {
   color: #666CFF;
 }
 .main .posts article img {
-  margin-left: 65rem;
+  margin-left: 2rem;
   width: 35%;
   margin-bottom: -22rem;
 }
@@ -345,15 +347,12 @@ footer {
   font-size: 1.7rem;
 }
 .menu a:hover {
-  background-color: #666CFF;
-  color: #ffae66;
+  background-color: #ffae66;
+  color: #666CFF;
 }
 .active {
-  background-color: #ffae66;
+  background-color: #666CFF;
   color: white;
-}
-.menu .icon {
-  display: none;
 }
 .banner {
   border-bottom: 3px solid #666CFF;
