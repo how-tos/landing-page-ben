@@ -172,7 +172,7 @@ header .logo {
     flex-direction: column;
     margin-bottom: 2rem;
     width: 75%;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 }
 header .logo:hover {
@@ -236,6 +236,35 @@ header #search {
 }
 .hamburger {
   display: none;
+}
+@media (max-width: 500px) {
+  .hamburger {
+    display: flex;
+  }
+  .hamburger img {
+    width: 10%;
+    height: 10%;
+  }
+  .hamburger a {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .hamburger--open {
+    display: flex;
+  }
+  .hamburger--open img {
+    width: 10%;
+    height: 10%;
+  }
+  .hamburger--open a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #666CFF;
+  }
+  .hamburger--open a:hover {
+    color: #ffae66;
+  }
 }
 .banner {
   border-bottom: 3px solid #666CFF;
@@ -392,5 +421,22 @@ footer {
   color: #ffae66;
 }
 .abanner-text .banner-btn:hover {
+  color: #666CFF;
+}
+.menu {
+  background-color: #666CFF;
+  overflow: hidden;
+}
+.menu a {
+  float: left;
+  display: block;
+  color: #ffae66;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.menu a:hover {
+  background-color: #ffae66;
   color: #666CFF;
 }
