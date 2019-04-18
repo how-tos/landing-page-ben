@@ -99,7 +99,10 @@ margin-left: 2rem;
     @media @phone{
       margin-left: 0rem;
       margin-bottom: 15rem;
-      width: 100%;
+    }
+    @media @tablet{
+      margin-left: 40rem;
+      width: 45%;
     }
   }
 
@@ -109,6 +112,9 @@ margin-left: 2rem;
     margin-top: -13rem;
     @media @phone {
       width: 100%;
+    }
+    @media @tablet{
+      margin-top: -12rem;
     }
     h1 {
       font-size: 3rem;
@@ -143,11 +149,14 @@ margin-left: 2rem;
       justify-content: space-evenly;
       flex-direction: column;
       flex-wrap: wrap;
-      
+
     article {
       margin-top: 5px;
       border-bottom: 2px dashed @blue;
       padding: 1rem;
+      @media @phone{
+        max-width: 100%;
+      }
       h3{
         font-size: 5rem;
         margin-bottom: 1rem;
@@ -161,32 +170,37 @@ margin-left: 2rem;
         @media @phone{
           width: 100%;
         }
+
       }
             .button{
               color:@orange;
               text-decoration: none;   
               display: flex;
               font-size: 2rem;
+              margin-bottom: 5rem;
       }
 
       .button:hover{
         color: @blue;
       }
         img{
-          margin-left: 2rem;
+          margin-left: 65rem;
           width: 35%;
-          margin-bottom: -22rem;
+          margin-bottom: -30rem;
           @media @phone{
-            margin-left: 14rem;
+            margin-left: 0rem;
             display: flex;
             flex-direction: column;
             margin-bottom: 10rem;
           }
+          @media @tablet{
+            margin-left: 45rem;
+            width: 35%
+          }
+          }
         }
       }
     }
-  }
-
 
 //Footer
 footer{

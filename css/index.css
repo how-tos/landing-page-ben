@@ -246,7 +246,12 @@ header #search {
   .banner .banner-img {
     margin-left: 0rem;
     margin-bottom: 15rem;
-    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .banner .banner-img {
+    margin-left: 40rem;
+    width: 45%;
   }
 }
 .banner .banner-text {
@@ -257,6 +262,11 @@ header #search {
 @media (max-width: 500px) {
   .banner .banner-text {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .banner .banner-text {
+    margin-top: -12rem;
   }
 }
 .banner .banner-text h1 {
@@ -291,6 +301,11 @@ header #search {
   border-bottom: 2px dashed #666CFF;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  .main .posts article {
+    max-width: 100%;
+  }
+}
 .main .posts article h3 {
   font-size: 5rem;
   margin-bottom: 1rem;
@@ -311,21 +326,28 @@ header #search {
   text-decoration: none;
   display: flex;
   font-size: 2rem;
+  margin-bottom: 5rem;
 }
 .main .posts article .button:hover {
   color: #666CFF;
 }
 .main .posts article img {
-  margin-left: 2rem;
+  margin-left: 65rem;
   width: 35%;
-  margin-bottom: -22rem;
+  margin-bottom: -30rem;
 }
 @media (max-width: 500px) {
   .main .posts article img {
-    margin-left: 14rem;
+    margin-left: 0rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .main .posts article img {
+    margin-left: 45rem;
+    width: 35%;
   }
 }
 footer {
@@ -349,10 +371,6 @@ footer {
 .menu a:hover {
   background-color: #ffae66;
   color: #666CFF;
-}
-.active {
-  background-color: #666CFF;
-  color: white;
 }
 .banner {
   border-bottom: 3px solid #666CFF;
@@ -387,52 +405,4 @@ footer {
 }
 .abanner-text .banner-btn:hover {
   color: #666CFF;
-}
-.main .posts {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.main .posts article {
-  margin-top: 5px;
-  border-bottom: 2px dashed #666CFF;
-  padding: 1rem;
-}
-.main .posts article h3 {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}
-.main .posts article p {
-  font-size: 2rem;
-  width: 60%;
-  color: #8c8c8c;
-  margin-bottom: 1rem;
-}
-@media (max-width: 500px) {
-  .main .posts article p {
-    width: 100%;
-  }
-}
-.main .posts article .button {
-  color: #ffae66;
-  text-decoration: none;
-  display: flex;
-  font-size: 2rem;
-}
-.main .posts article .button:hover {
-  color: #666CFF;
-}
-.main .posts article img {
-  margin-left: 65rem;
-  width: 35%;
-  margin-bottom: -22rem;
-}
-@media (max-width: 500px) {
-  .main .posts article img {
-    margin-left: 14rem;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10rem;
-  }
 }
