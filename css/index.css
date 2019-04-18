@@ -188,6 +188,7 @@ header nav {
   header nav {
     flex-direction: column;
     margin-right: 0rem;
+    display: none;
   }
 }
 @media (max-width: 500px) {
@@ -232,6 +233,9 @@ header #search {
     flex-direction: column;
     margin-left: 12rem;
   }
+}
+.hamburger {
+  display: none;
 }
 .banner {
   border-bottom: 3px solid #666CFF;
@@ -355,23 +359,6 @@ footer {
   text-align: center;
   font-size: 1.7rem;
   background-color: whitesmoke;
-}
-.menu {
-  background-color: #666CFF;
-  overflow: hidden;
-}
-.menu a {
-  float: left;
-  display: block;
-  color: #ffae66;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-.menu a:hover {
-  background-color: #ffae66;
-  color: #666CFF;
 }
 .banner {
   border-bottom: 3px solid #666CFF;
