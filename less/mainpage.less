@@ -1,0 +1,215 @@
+//Container
+
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  @media @phone{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+//Header and Nav
+
+header{
+border-bottom: 3px solid @blue;
+  .logo{
+    width:30%;
+    display: flex;
+    margin-bottom: -7rem;
+    padding: 2rem;
+    @media @phone{
+      flex-direction: column;
+      margin-bottom: 2rem;
+      width:75%;
+      margin-left: 5rem;
+    }
+  }
+
+  .logo:hover{
+    color: @orange;
+  }
+
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0rem;
+    margin-bottom: -2rem;
+    @media @phone{
+      flex-direction: column;
+      margin-right: 0rem;
+      display:none;
+    }
+    a{
+      @media @phone{
+        padding: 2rem;
+      }
+    }
+  }
+
+  a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: @orange;
+    font-size: 2rem;
+    padding: 1rem;
+    @media @phone{
+      border: 1px solid @blue;
+    }
+  }
+
+  a:hover{
+    color: @blue
+  }
+
+  #search{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-bottom: .1rem;
+    @media @phone{
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    }
+  }
+}
+
+//Login
+
+#login{
+margin-left: 2rem;
+@media @phone{
+  flex-direction: column;
+  margin-left: 12rem;
+  }
+}
+
+//Hamburger Menu
+.hamburger{
+    display: none;
+}
+
+//Banner
+
+.banner{
+  border-bottom: 3px solid @blue;
+  padding: 1rem;
+  .banner-img{
+    margin-left: 65rem;
+    margin-bottom: -10rem;
+    width: 35%;
+    @media @phone{
+      display: none;
+    }
+    @media @tablet{
+      margin-left: 40rem;
+      width: 45%;
+    }
+  }
+
+  .banner-text{
+    width: 50%;
+    margin-bottom: 3rem;
+    margin-top: -13rem;
+    @media @phone {
+      width: 100%;
+    }
+    @media @tablet{
+      margin-top: -12rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      @media @phone{
+        margin-top: 13rem;
+      }
+    }
+
+    p{
+      font-size: 2rem;
+      color: @gray;
+      @media @phone{
+        width: 100%;
+        
+      }
+    }
+
+    .banner-btn{
+      font-size: 2rem;
+      text-decoration: none;
+      color: @orange;
+    }
+    .banner-btn:hover{
+      color: @blue;
+    }
+  }
+}
+
+//Main page
+
+.main{
+
+  .posts{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+    article {
+      margin-top: 5px;
+      border-bottom: 2px dashed @blue;
+      padding: 1rem;
+      @media @phone{
+        max-width: 100%;
+      }
+      h3{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
+
+      p{
+        font-size: 2rem;
+        width: 60%;
+        color: @gray;
+        margin-bottom: 1rem;
+        @media @phone{
+          width: 100%;
+        }
+
+      }
+            .button{
+              color:@orange;
+              text-decoration: none;   
+              display: flex;
+              font-size: 2rem;
+              margin-bottom: 5rem;
+      }
+
+      .button:hover{
+        color: @blue;
+      }
+        img{
+          margin-left: 65rem;
+          width: 35%;
+          margin-bottom: -30rem;
+          @media @phone{
+            display: none;
+          }
+          @media @tablet{
+            margin-left: 45rem;
+            width: 35%
+          }
+          }
+        }
+      }
+    }
+
+//Footer
+footer{
+  text-align: center;
+  font-size: 1.7rem;
+  background-color:whitesmoke;
+}
