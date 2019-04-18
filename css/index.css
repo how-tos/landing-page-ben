@@ -258,9 +258,10 @@ header #search {
     height: 10%;
   }
   .hamburger--open a {
-    font-size: 3rem;
+    font-size: 7rem;
     text-decoration: none;
     color: #666CFF;
+    display: flex;
   }
   .hamburger--open a:hover {
     color: #ffae66;

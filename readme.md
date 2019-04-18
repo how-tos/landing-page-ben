@@ -1,0 +1,1 @@
+Welcome to the landing page for How-To by Benjamin Lopez! Everything here is pretty self explanatory, there is an html file for every page available, 

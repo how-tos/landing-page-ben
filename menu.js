@@ -1,9 +1,9 @@
-const menu = document.querySelector('.hamburger'); 
+const hmenu = document.querySelector('.hamburger'); 
 
 const toggleMenu = () =>{
-    hamburger.classList.toggle('hamburger--open')
+    hmenu.classList.toggle('hamburger--open');
 }
 
-const hamburgerButton = document.querySelector('.btn')
+const hamburgerButton = document.querySelector('.btn');
 
-hamburgermenuButton.addEventListener('click', toggleMenu);
+hamburgerButton.addEventListener('click', toggleMenu);
