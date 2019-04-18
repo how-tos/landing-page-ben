@@ -97,8 +97,7 @@ margin-left: 2rem;
     margin-bottom: -10rem;
     width: 35%;
     @media @phone{
-      margin-left: 0rem;
-      margin-bottom: 15rem;
+      display: none;
     }
     @media @tablet{
       margin-left: 40rem;
@@ -119,6 +118,9 @@ margin-left: 2rem;
     h1 {
       font-size: 3rem;
       margin-bottom: 2rem;
+      @media @phone{
+        margin-top: 13rem;
+      }
     }
 
     p{
@@ -126,6 +128,7 @@ margin-left: 2rem;
       color: @gray;
       @media @phone{
         width: 100%;
+        
       }
     }
 
@@ -188,10 +191,7 @@ margin-left: 2rem;
           width: 35%;
           margin-bottom: -30rem;
           @media @phone{
-            margin-left: 0rem;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10rem;
+            display: none;
           }
           @media @tablet{
             margin-left: 45rem;
