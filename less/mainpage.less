@@ -23,7 +23,7 @@ border-bottom: 3px solid @blue;
       flex-direction: column;
       margin-bottom: 2rem;
       width:75%;
-      margin-left: 5rem;
+      margin-left: 3rem;
     }
   }
 
@@ -90,6 +90,39 @@ margin-left: 2rem;
 //Hamburger Menu
 .hamburger{
     display: none;
+    @media @phone{
+      display: flex;
+      img{
+        width: 10%;
+        height: 10%;
+        cursor: pointer;
+      }
+      a{
+        display: none;
+    }
+}
+}
+
+.hamburger--open{
+  @media @phone{
+    display: flex;
+    img{
+      width: 10%;
+      height: 10%;
+      cursor: pointer;
+    }
+    a{
+      font-size: 7rem;
+      text-decoration: none;
+      color: @blue;
+      display: flex;
+      margin-top: 3rem;
+      margin-left: -4rem;
+    }
+    a:hover{
+      color: @orange;
+    }
+  }
 }
 
 //Banner
@@ -208,7 +241,7 @@ margin-left: 2rem;
     }
 
 //Footer
-footer{
+footer {
   text-align: center;
   font-size: 1.7rem;
   background-color:whitesmoke;

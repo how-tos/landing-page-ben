@@ -34,3 +34,154 @@
       }
     }
   
+    //Mainpage Content
+    .about{
+
+      .posts{
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          flex-wrap: wrap;
+    
+        article {
+          border-bottom: 2px dashed @blue;
+          padding: 1rem;
+          margin-top: -15rem;
+          @media @phone{
+            max-width: 100%;
+          }
+          h3{
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            
+          }
+          h2{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+          }
+          p{
+            font-size: 2rem;
+            width: 60%;
+            color: @gray;
+            margin-bottom: 1rem;
+            @media @phone{
+              width: 100%;
+            }
+    
+          }
+                .button{
+            display:none;
+          }
+            img{
+              margin-left: 65rem;
+              width: 35%;
+              margin-bottom: -30rem;
+              @media @phone{
+                display: none;
+              }
+              @media @tablet{
+                margin-left: 45rem;
+                width: 35%
+              }
+              }
+            }
+          }
+        }
+
+  //image tweaks 
+    .about{
+      .posts{
+        article{
+          a{
+            font-size: 1.8rem;
+            img{
+              padding: 4rem;
+              margin-bottom:-17rem;
+              margin-top: 10rem;
+              height: 30rem;
+            }
+          }
+        }
+      }
+    }
+
+  //Mobile View
+@media @phone{
+  .about{
+
+    .posts{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+  
+      article {
+        margin-top: 5px;
+        border-bottom: 2px dashed @blue;
+        padding: 1rem;
+        max-width: 100%;
+        h3{
+          font-size: 5rem;
+          margin-bottom: 1rem;
+        }
+  
+        p{
+          font-size: 2rem;
+          color: @gray;
+          margin-bottom: 1rem;
+            width: 100%;
+  
+        }
+              .button{
+                color:@orange;
+                text-decoration: none;   
+                display: flex;
+                font-size: 2rem;
+                margin-bottom: 5rem;
+        }
+  
+        .button:hover{
+          color: @blue;
+        }
+          img{
+            display: none;
+            @media @tablet{
+              margin-left: 45rem;
+              width: 35%
+            }
+            }
+          }
+        }
+      }
+  
+}
+
+//Tablet view for images
+.about{
+  .posts{
+    article{
+      img{
+        @media @tablet{
+          margin-left: 45rem;
+          width: 35%
+        }
+      }
+    }
+  }
+}
+
+//Home Button
+.home-btn{
+  display:none;
+  @media@phone{
+    display: flex;
+  a{
+    font-size: 3rem;
+    color: @blue;
+    text-decoration: none;
+  }
+  a:hover{
+    color: @orange;
+  }
+}
+}
