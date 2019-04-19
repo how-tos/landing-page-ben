@@ -540,6 +540,22 @@ footer {
     width: 35%;
   }
 }
+.home-btn {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home-btn {
+    display: flex;
+  }
+  .home-btn a {
+    font-size: 3rem;
+    color: #666CFF;
+    text-decoration: none;
+  }
+  .home-btn a:hover {
+    color: #ffae66;
+  }
+}
 .menu {
   background-color: #666CFF;
   overflow: hidden;
